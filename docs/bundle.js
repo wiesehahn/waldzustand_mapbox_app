@@ -3326,7 +3326,7 @@
         }), d3.select(".close-button").on("click", function() {
             d3.select(".about-screen").classed("about-screen-visible") ? d3.select(".about-screen").classed("about-screen-visible", !1) : d3.select(".about-screen").classed("about-screen-visible", !0)
         }), x < 720 && (d3.select("#present-button").select("p").html("Waldzustand<br>2019"), d3.select("#compare-button").select("p").html("Vergleich<br>zu 2017"), d3.select("#delta-button").select("p").html(function() {
-            return 'Veränderung &rsquo;17-&rsquo;19 <span class="legend-change"><span style="color:#bf4d2b;">Verschlechterung</span>vs.<span style="color:#357662;">Verbesserung</span></span>'
+            return 'Veränderung<br>2017-19 <span class="legend-change"><span style="color:#bf4d2b;">--</span>vs.<span style="color:#357662;">++</span></span>'
         }));
         var n, a, o, i = 0,
             l = [{
@@ -3514,7 +3514,7 @@
         mapboxgl.accessToken = "pk.eyJ1Ijoid2llc2VoYWhuIiwiYSI6ImNrMnhjMzRmaTA3ejQzY3FydjN2bjV3djAifQ.dlWSd8EtIAmyjGmeK4MRAw"; //"pk.eyJ1IjoiZG9jazQyNDIiLCJhIjoiY2pjazE5eTM2NDl2aDJ3cDUyeDlsb292NiJ9.Jr__XbmAolbLyzPDj7-8kQ";
         var M = 7;
         x < 500 && (M = 6.5);
-        var S, T = 12;
+        var S, T = 14;
         x < 500 && (T = 6.99), n = new mapboxgl.Map({
             container: "main-map",
             style: "mapbox://styles/mapbox/satellite-v9", //"mapbox://styles/dock4242/cjnel8krq2ltq2spteciqe2x3?optimize=true",
@@ -3523,7 +3523,7 @@
             pitch: 60,
             bearing: 0,
             maxZoom: T,
-            minZoom: 4.5
+            minZoom: 3.5
         }), x > 500 && n.addControl(new mapboxgl.NavigationControl, "bottom-right"), n.on("load", function() {
             m.classed("start-active", !0).select("p").text("Zur Karte").on("click", function(t) {
                 s.selectAll(".tour-toggle-arrow").on("click", function(t, e) {

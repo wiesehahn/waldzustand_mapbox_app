@@ -3557,8 +3557,8 @@
             init: function() {
                 (console.log("fetching coordinates"), new Promise(function(t) {
                     var e = {
-                        latitude: 37.511,
-                        longitude: -122.05
+                        latitude: 10.47975,
+                        longitude: 50.52323
                     };
                     y("fd4d87f605681c0959c16d9164ab6a4a", function(n, a) {
                         var o = null;
